@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <style>
+        body {
+            text-align:center;
+        }
+          
+        h1 {
+            color: green;
+        }
+                                               
+        .parent {
+            width: 800px;
+            height: 400px;
+            background-color: lightgrey;
+            margin-left:150px;
+            padding:5px;
+            padding-left:50px;
+            padding-right:50px;
+        }
+          
+        .child {
+            margin-left: 45px;
+            width: 100px;
+            height: 30px;
+            background-color: grey;
+        }
+          
+        div {
+            outline: 1px solid green;
+        }
+          
+        .parent:hover .child {
+            background-color: green;
+        }
+
+        .parent:hover .childP{
+            color:yellow;
+            background:green;
+        }
+    </style>
+</head>
+  
+<body>
+    <h1>GeeksforGeeks</h1>
+    <h3>
+        Hovering one element to change 
+        the effect to other element
+    </h3>
+    <div class="parent"> GeeksforGeeks
+        <div class="child">
+            GeeksforGeeks 
+        </div>
+        <br>
+        <div class="child">
+            GeeksforGeeks 
+        </div>
+        <br>
+        <div class="child">
+            GeeksforGeeks 
+        </div>
+        <p class="metinRengi" class="arkaplanRengi">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod esse aspernatur asperiores rerum quos, magnam unde minima explicabo natus tenetur reiciendis. Distinctio aspernatur repellat, beatae quisquam suscipit accusantium dolores porro quasi odio tenetur mollitia officia sunt esse blanditiis molestias cum. Eaque ipsa explicabo nulla aspernatur distinctio ducimus id consequuntur beatae.</p>
+    </div>
+</body>
+</html>

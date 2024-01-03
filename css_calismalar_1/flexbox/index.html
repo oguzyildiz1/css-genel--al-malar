@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <style>
+            .flex-container {
+                display: flex;
+                background-color: DodgerBlue;
+                flex-grow: column wrap;
+            }
+
+            .flex-containerStart {
+                justify-content: start;
+            }
+
+            .flex-containerEnd {
+                justify-content: end;
+            }
+
+            .flex-container>div {
+                background-color: #f1f1f1;
+                margin: 10px 10px;
+                padding: 20px;
+                font-size: 30px;
+            }
+
+            .flex-container>div:first-child {}
+
+            /* .flex-container>div:first-child {
+                background-color: red;
+                margin-right: ;
+            }
+
+            .flex-container>div:nth-child(2) {
+                background-color: green;
+                margin: 10px auto; */
+        </style>
+    </head>
+
+    <body>
+
+        <script>
+            var clickA = false;
+        </script>
+
+        <h1>Create a Flex Container</h1>
+
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+        <p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+
+        <p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+
+        <button onclick='
+        if(clickA===false){
+            console.log("false");
+            let container = document.querySelector(".flex-container");
+            container.classList.add("flex-containerEnd");
+            clickA=true;
+         }
+        else if(clickA===true){
+            console.log("true");
+            let container = document.querySelector(".flex-container");
+            container.classList.remove("flex-containerEnd");
+            clickA=false;
+        }
+        '>Press Me!
+        </button>
+
+    </body>
+
+    </html>
+
+
+
+</body>
+
+</html>

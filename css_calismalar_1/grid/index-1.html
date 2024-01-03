@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        div.grid-container {
+            display: grid;
+            grid-template-columns: 80px 100px 80px 50px;
+            grid-template-rows: 80px 100px;
+            justify-content: center;
+            align-content: start;
+            background-color: #2196F3;
+            padding: 10px;
+            height: 500px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+
+        }
+
+        .grid-container>.grid-item:first-child {
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 1;
+        }
+
+        .grid-container>.grid-item:nth-child(5) {
+            grid-area: 2 / 2 / 4 / 4;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">1</div>
+
+    </div>
+
+
+
+</body>
+
+</html>

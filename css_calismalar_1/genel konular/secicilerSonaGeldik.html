@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="tr-TR">
+	<head>
+		<meta charset="UTF-8">
+		<title>Son Seçiçi</title>
+		<style>
+			:root{
+				--backColor:red;
+			}
+			ul li{
+				background-color:var(--backColor);
+			}
+			ul li:first-child{
+				background-color:lightgreen;
+			}
+			ul li:empty{
+				background-color:green;
+			}
+			div p::selection{
+				background-color:yellow;
+				color:red;
+				text-decoration:underline;
+			}
+			p{
+				font-style:normal;
+			}
+			
+		</style>
+	<head>
+	<body>
+		<div>
+			<p id="demo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus posuere leo, mollis ullamcorper augue gravida a. Proin sodales lacinia interdum. Sed a quam sed massa molestie laoreet ac in augue. Morbi fringilla dolor est, et scelerisque mauris pellentesque in. Etiam luctus sapien et dui dictum consequat. In eleifend erat tortor, sed faucibus est commodo tincidunt. Nunc efficitur dapibus turpis, eu porta diam lacinia at. Suspendisse cursus nulla eu elit euismod, sit amet gravida urna ornare. Phasellus id eros turpis. Mauris convallis ullamcorper facilisis. Pellentesque interdum, eros vitae vehicula rhoncus, est leo porta ligula, nec placerat metus orci in diam.</p>
+			
+		</div>
+		<ul>
+			<li>Element 1</li>
+			<li>Element 1</li>
+		</ul>
+		<ul>
+			<li>Element 1</li>
+			<li>Element 1</li>
+			<li></li>
+			<li></li>
+			<li>Element 1</li>
+		</ul>
+		<button type="button" onclick="fontStyleSet()">Italic</button>
+		<script>
+			var _initial="off";
+			
+			function fontStyleSet(){
+				if (_initial=="off"){
+					var _styleText="italic";
+					fontStyleChange();
+				}
+			}else{}
+								
+			function fontStyleItalic(){
+				document.getElementById("demo").style.fontStyle = "italic";
+				<!-- var _textStyle = "italic"; -->
+		
+		
+		
+
+			function fontStyleChange(){
+				if(_textStyle=="normal"){
+					function fontStyleItalic(){
+						document.getElementById("demo").style.fontStyle = "italic";
+						var _textStyle = "italic";
+					}
+				}else{
+				console.log(3);
+				}
+					
+				<!-- }else{ -->
+					<!-- function fontStyleNormal(){ -->
+						<!-- document.getElementById("demo").style.fontStyle = "normal"; -->
+						<!-- var _textStyle ="normal"; -->
+					<!-- } -->
+				<!-- } -->
+			}
+		</script>
+	<body>
+<html>

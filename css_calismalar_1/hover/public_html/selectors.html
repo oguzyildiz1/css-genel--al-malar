@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selectors</title>
+        <style>
+            h1:hover + div > p {
+                border:5px solid red;
+            }
+            h1:hover + div + h2 {
+                color:red;
+            }
+            h1:hover + div > p + div >h2{
+                color:yellow;
+            }
+            .changer{
+                background-color:lightseagreen;
+            }
+            h2.changer{
+                color:coral;
+            }
+            p.changer{
+                color:brown;
+            }
+            p#idy,p#idx{
+                color:darkkhaki;
+                color:aqua;
+                color:red;
+            }
+            h1.xy{
+                background-color:honeydew;
+            }
+            .xyz{
+                border:6px solid firebrick;
+                background-color:darkgreen !important;
+            }
+            /* burada daha detaylı olarak tanımlanan baskın çıkıyor. */
+        </style>
+    </head>
+    <body>
+        <!-- Bir nesneye iki ayrı class atamak istediğimizde arada bir boşluk bırakılıyor -->
+        <h1 class="xy xyz">Hello World</h1>
+        <div id="firstDiv">
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam et, ut cumque nemo veritatis assumenda, qui rem reprehenderit ea odit repellat sequi eum laborum porro, optio dicta consectetur dolore?</p>
+            <div>
+                <h2 class="headSecond">Select This</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores hic nulla ad architecto. Omnis voluptas laboriosam deserunt id repellat eius.</p>
+            </div>
+        </div>
+        <h2 class="changer xyz">This the Third</h2>
+        <p class="changer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam iste nemo nesciunt numquam debitis laborum magnam sapiente, voluptas voluptate excepturi suscipit minus quas vero deserunt reiciendis eius mollitia magni quo architecto consequatur. Mollitia, blanditiis inventore!</p>
+        <!-- id alan nesneyede bu şekilde class verilebiliyor. -->
+        <p id="idy" class="xyz">Lorem ipsum dolor sit amet.</p>
+        <p id="idx">Lorem ipsum dolor sit amet consectetur.</p>
+    </body>
+</html>

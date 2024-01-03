@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Kungen and Lisa</title>
+		<link rel="stylesheet" href="Icons/css/all.css">
+		<style>
+			:root{
+				--womanIconColor:hotpink;
+				--womanNameColor:hotpink;
+				--manIconColor:blue;
+				--manNameColor:blue;
+			}
+			body{
+				font-size:20px;
+			}
+			div{
+				background-color:antiquewhite;
+			}
+			div > ul li > i[class*="dress"]{
+				color:var(--womanIconColor);
+			}
+			div > ul li > i[class$="person"]{
+				color:var(--manIconColor);
+			}
+			div > ul li > i[class*="dress"] + b{
+				color:var(--womanNameColor);
+			}
+			div > ul li > i[class$="person"] + b{
+				color:var(--manNameColor);
+			}
+			div > ul li::before{
+				content: "-->";
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="chat" style="border:2px solid red">
+			<ul type="none">
+				<li><i class="fa-solid fa-person-dress"></i><b> Lisa:</b> Hi! how are you?</li>
+				<li><i class="fa-solid fa-person"></i><b> Kungen:</b> I am good thanks! And you?</li>
+				<li><i class="fa-solid fa-person-dress"></i><b> Lisa:</b> I am good too. Where are you from Kungen?</li>
+				<li><i class="fa-solid fa-person"></i><b> Kungen:</b> I am from Sweden. What about you?</li>
+				<li><i class="fa-solid fa-person-dress"></i><b> Lisa:</b> I am from England. Nice to meet you!</li>
+				<li><i class="fa-solid fa-person"></i><b> Kungen:</b> Nice to meet you too Lisa!</li>
+				<li><i class="fa-solid fa-person-dress"></i><b> Lisa:</b> I have a dinner with my famiy. Would you like to join us?</li>
+				<li><i class="fa-solid fa-person"></i><b> Kungen:</b> Sure Lisa! I am hungry anyways...</li>
+				<li><i class="fa-solid fa-person-dress"></i><b> Lisa:</b> Good then. Let's go! </li>
+			</ul>
+		</div>
+		<p class="y" id="help">Choose your color:</p>
+		<div>
+			<button type="button" onclick="document.querySelector('i.fa-solid').style.backgroundColor= 'blue' " >Lisa</button>
+			<button type="button" onclick="document.getElementById('help').innerHTML='True World'">Icon</button>
+			<button>Icon</button>
+			
+			<script>
+				document.querySelector("i.fa-solid").style.backgroundColor = "red";
+			</script>
+		</div>
+	</body>
+</html>

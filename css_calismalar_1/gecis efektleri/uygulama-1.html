@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geçiş Efetkleri Uygulama</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        div.main {
+            position: relative;
+
+        }
+
+        /* transition efekti için başlangıç position değerlerinin verilmesi gerekiyor.*/
+
+        div.main>div {
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: all ease 0.5s;
+
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #333;
+            background-position: center center;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        div.main>div:nth-child(1) {
+            background-image: url('resim-1.jpg');
+        }
+
+        div.main>div:nth-child(2) {
+            background-image: url('resim-2.jpg');
+        }
+
+        div.main>div:nth-child(3) {
+            background-image: url('resim-3.jpg');
+        }
+
+        div.main>div:nth-child(4) {
+            background-image: url('resim-4.jpg');
+        }
+
+        div.main {
+            background-image: url('resim-5.jpg');
+        }
+
+        div.main:hover div:nth-child(1) {
+
+            left: 100%;
+        }
+
+        div.main:hover div:nth-child(2) {
+            left: -100%;
+            transition-delay: 1.2s;
+        }
+
+        div.main:hover div:nth-child(3) {
+            transition-delay: 0.5s;
+            top: 100%;
+        }
+
+        div.main:hover div:nth-child(4) {
+            transition-delay: 1.9s;
+            top: -100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>

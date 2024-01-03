@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+	
+	</head>
+	<body>
+		<h1>Demolition</h1>
+		<h3>Cümlenin ilk harfi : </h3>		
+		<p id="demo"></p>	
+		<h3>Aynı cümlenin ikinci harfi: </h3>	
+		<p id="demo2"></p>
+		<h3>Aynı cümlenin son harfi ise : </h3>
+		<p id="demo3"></p>
+		<h3>Cümlenin sırayla harflari :</h3>
+		<p id="sira"></p>
+		<script>
+			let text ="Google ile arama";
+			let _letter =text.charAt(0);
+			document.getElementById("demo").innerHTML=_letter;
+			let _letter2=text.charAt(1);
+			document.getElementById("demo2").innerHTML=_letter2;
+			let _letterLast=text.charAt(text.length-1)
+			document.getElementById("demo3").innerHTML=_letterLast;
+			
+			let _son_text="";
+			
+			for(let i=0;i<10;i++){
+				_son_text += text.charAt(i)+"<br>";
+				//document.getElementById("sira").innerHTML=text.charAt(i)+"<br>";
+			}
+			document.getElementById("sira").innerHTML=_son_text;
+		</script>
+		
+	</body>
+</html>

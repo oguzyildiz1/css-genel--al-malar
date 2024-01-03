@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="tr-TR">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Tasarım</title>
+	<style>
+		/* nav {
+			width: 80%;
+			background-color: green;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+
+		nav div {
+			text-align: right;
+			padding: 0.5rem;
+
+		}
+
+		nav div>h2 {
+			flex-basis: 30%;
+			background-color: yellowgreen;
+		}
+
+		nav div span {
+			color: white;
+			display: inline-block;
+			padding: 0.5rem;
+			border: 1px solid white;
+			margin-right: 20px;
+			border-radius: 5px;
+			display: none;
+
+		} */
+		body {
+			padding: 0;
+			margin: 0;
+		}
+
+		nav {
+			display: flex;
+			background-color: olive;
+			flex-direction: row;
+			align-content: center;
+			align-items: center;
+		}
+
+		nav>div:nth-child(1) {
+			width: 20%;
+		}
+
+		nav>div:nth-child(1) h2 {
+			margin: 0;
+			margin-left: 1rem;
+			color: white;
+		}
+
+		nav>div:nth-child(2) {
+			width: 80%;
+		}
+
+		nav>div:nth-child(2)>ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			text-align: right;
+			justify-content: flex-end;
+			/* flex-direction: row-reverse; */
+		}
+
+		nav>div:nth-child(2)>ul>li>a {
+			color: white;
+			padding: 0.5rem;
+			text-decoration: none;
+			display: block;
+			border-right: 1px solid white;
+		}
+
+		nav>div:nth-child(2)>ul>li>a:hover {
+			background-color: rgb(243, 243, 14)
+		}
+
+		nav>div:nth-child(2)>div {
+			display: none;
+		}
+
+		@media (max-width:576px) {
+			nav {
+				flex-direction: column;
+			}
+
+			nav>div:nth-child(1) {
+				width: 100%;
+				text-align: center;
+				border-bottom: 1px solid silver;
+			}
+
+			nav>div:nth-child(2) {
+				width: 100%;
+			}
+
+
+			nav>div:nth-child(2)>div {
+				display: block;
+				padding: 0.5rem;
+			}
+
+
+			nav>div:nth-child(2)>div>span {
+				color: white;
+				padding: 0.3rem 0.5rem;
+				border: 1px solid white;
+				display: inline-block;
+				border-radius: 5px;
+				font-weight: bold;
+			}
+
+			nav>div:nth-child(2)>div+ul {
+				display: block;
+				justify-content: flex-start;
+				text-align: left;
+			}
+
+			nav>div:nth-child(2)>div+ul>li>a {
+				border-right: none;
+				border-bottom: 1px solid silver;
+			}
+
+
+			nav>div:nth-child(2)>div+ul {
+				display: none;
+
+			}
+
+			nav>div:nth-child(2)>div:hover+ul {
+				display: block;
+
+			}
+
+			nav>div:nth-child(2)>ul {
+				flex-direction: column;
+			}
+
+			/* nav>div:nth-child(2)>div:hover+ul {
+				display: block;
+			} */
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<div>
+			<h2>Site İsmi</h2>
+		</div>
+
+		<div>
+			<div class="mobil">
+				<span>&#9776;</span>
+			</div>
+			<ul>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+			</ul>
+		</div>
+	</nav>
+</body>
+
+</html>

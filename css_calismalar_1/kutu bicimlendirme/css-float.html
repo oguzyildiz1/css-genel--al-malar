@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="tr-TR">
+	<head>
+		<meta charset="utf-8">
+		<title>CSS FLOAT KULLANIMIt</title>
+		<style>
+			body{
+				margin:0;
+				padding:0;
+			}
+			div{
+				width:20vw;
+				background-color:goldenrod;
+				height:50vh;
+				border:1px solid #333;
+				float:right;/*sola yasla*/
+			}
+			div.x{
+				clear: both; /* alt satıra geçmesi için*/
+				width:100%;
+				height:10vh;
+				float:left;
+				
+			}
+		</style>
+	</head>
+
+	<body>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div class="x">x</div>
+		
+	</body>
+</html>

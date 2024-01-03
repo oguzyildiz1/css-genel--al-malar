@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr-TR">
+    <head>
+        <meta charset="utf-8">
+        <title>FLEX-BOX</title>
+        <style>
+            body{
+                margin:0;
+                padding:0;
+            }
+            div.main{
+                display:flex;
+                background-color:lightsalmon;
+                height:200px;
+                flex-flow:wrap row;
+                justify-content:center;
+                align-content:center;
+                align-items:baseline;
+            }
+            div.main div:nth-child(1){background-color:lightseagreen;}
+            div.main div:nth-child(2){background-color:lightyellow;}
+            div.main div:nth-child(3){background-color:lightpink;}
+            div.main div:nth-child(4){background-color:lightcoral;}
+        
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <div>
+                <h3>Başlık</h3>
+            </div>
+            <div>
+                <h1>Başlık</h1>
+            </div>
+            <div>
+                <h6>Başlık</h6>
+            </div>
+            <div>
+                <h4>Başlık</h4>
+            </div>
+        
+        
+        </div>
+            
+        
+    </body>
+</html>

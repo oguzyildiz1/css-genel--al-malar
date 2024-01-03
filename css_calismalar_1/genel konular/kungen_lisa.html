@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="tr-TR">
+	<head>
+		<meta charset="utf-8">
+		<title>seciciler.html</title>
+		<link rel="stylesheet" href="Icons/css/all.css">
+		<style>
+			:root{
+				--main-color:blue;
+				--italic-color:silver;
+				--lisa-color:pink;
+				--kungen-color:lightgreen;
+			}
+			ul li:first-child{
+				background-color:red;
+			}
+			ul li:last-child{
+				background-color:salmon;
+			}
+			ul li:only-of-type{
+				background-color:sandybrown;
+			}
+			ul li:only-child{
+				color:blue;
+			}
+			ul li:empty{
+				background-color:darkgoldenrod;
+			}
+			input:enabled{
+				background-color:red;
+			}
+			input:disabled{
+				background-color:lightcoral;
+			}
+			p::selection{
+			background-color:chartreuse;
+			}
+			p:nth-of-type(2)::selection{
+			background-color:brown;
+			}
+			p:nth-last-child(1)::selection{
+				background-color:turquoise;
+			}
+			div + div{
+				background-color:sienna;
+			}
+			div + p{
+				background-color:palevioletred;
+			}
+			div + p > i{
+				background-color:red;
+			}
+			div + p > i > strong{
+				background-color:blue;
+				color:var(--italic-color)
+			}
+			p + ul li:nth-child(5){
+				background-color:var(--main-color);
+			}
+			div > ul > li:nth-child(odd){
+				background-color:var(--lisa-color);
+			}
+			div > ul > li:nth-child(even){
+				background-color:var(--kungen-color);
+			}
+			div > ul li{
+				color:darkblue;
+			}
+			div > ul li i{
+				color:red;
+			}
+			div > ul li i[class^="fa-regular"]{
+				background-color:darkgreen;
+				color:whitesmoke;
+			}
+			div > ul li i[class*="solid"]{
+				background-color:aliceblue;
+			}
+			div > ul li b{
+				color:red;
+				text-decoration:underline;
+			}
+			div > ul li i[class*="fa-regular"] + b{
+				color:darkgreen;
+			}
+			#chat{
+				background-color:aquamarine;
+			}
+		</style>
+	</head>
+
+	<body>
+		hello world
+		<div>
+			<img src="#" alt="Alternative Image"/>
+			<p title="New paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris bibendum aliquet ligula vel pretium. In.</p>
+		</div>
+		<div>
+			<p>Lorem ipsum dolor sit amet, consecteturadipiscing elit. Sed tempor ante in eros fermentum, quis interdum risus dictum. Maecenas auctor fermentum volutpat. Donec hendrerit augue ex, vel laoreet odio interdum quis. Proin laoreet cursus libero, quis volutpat sem blandit vel. Phasellus et erat vitae ipsum.</p>
+		</div>
+		<p>Lorem ipsum dolor sit amet, consectetur  <i>adipiscing <strong>elit</strong></i> . Sed tempor ante in eros fermentum,
+		</p>
+		<ul>
+			<li>Element 2</li>
+		</ul>
+		<ul>
+			<li>Element 2</li>
+		</ul>
+		<input type="text" /><br>
+		<input type="text" disabled />
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor ante in eros fermentum, quis interdum risus dictum. Maecenas auctor fermentum volutpat. Donec hendrerit augue ex, vel laoreet odio interdum quis. Proin laoreet cursus libero, quis volutpat sem blandit vel. Phasellus et erat vitae ipsum.
+		</p>
+		<div id="chat" style="border:2px solid red">
+			<ul type="none">
+				<li><i class="fa-regular fa-face-smile"></i><b>Lisa:</b> Hi! how are you?</li>
+				<li><i class="fa-solid fa-face-smile"></i><b>Kungen:</b> I am good thanks! And you?</li>
+				<li><i class="fa-regular fa-face-smile"></i><b>Lisa:</b> I am good too. Where are you from Kungen?</li>
+				<li><i class="fa-solid fa-face-smile"></i><b>Kungen:</b> I am from Sweden. What about you?</li>
+				<li><i class="fa-regular fa-face-smile"></i><b>Lisa:</b> I am from England. Nice to meet you!</li>
+				<li><i class="fa-solid fa-face-smile"></i><b>Kungen:</b> Nice to meet you too Lisa!</li>
+				<li><i class="fa-regular fa-face-smile"></i><b>Lisa:</b> I have a dinner with my famiy. Would you like to join us?</li>
+				<li><i class="fa-solid fa-face-smile"></i><b>Kungen:</b> Sure Lisa! I am hungry anyways...</li>
+				<li><i class="fa-regular fa-face-smile"></i><b>Lisa:</b> Good then. Let's go! </li>
+			</ul>
+		</div>
+		<ul>
+			<li></li>
+			<li></li>
+			<li>Element 1</li>
+			<li>Element 1</li>
+			<li>Element 5</li>
+			<li>Element 1</li>
+			<li>Element 1</li>
+			<li>Element 1</li>
+		</ul>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor ante in eros fermentum, quis interdum risus dictum. Maecenas auctor fermentum volutpat. Donec hendrerit augue ex, vel laoreet odio interdum quis. Proin laoreet cursus libero, quis volutpat sem blandit vel. Phasellus et erat vitae ipsum.
+		</p>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor ante in eros fermentum, quis interdum risus dictum. Maecenas auctor fermentum volutpat. Donec hendrerit augue ex, vel laoreet odio interdum quis. Proin laoreet cursus libero, quis volutpat sem blandit vel. Phasellus et erat vitae ipsum.
+		</p>
+	</body>
+</html>

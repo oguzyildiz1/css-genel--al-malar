@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Untitled Document</title>
+	<style>
+		body{
+			height:100vw;
+			background-color:blue;
+		}
+		div.main{
+			width:50%;
+			height:500px;
+			background:silver;
+		}
+		div.main > div{
+			width:50%;
+			height:100px;
+			background:red;
+			border:medium solid blue;
+		}
+		div.main > div> div{
+			width:50vw;
+			height:100px;
+			background:darkcyan;
+			display:inline-block;
+		}
+		div.main >div> div:first-child{
+			width:50vw;
+			height:100px;
+			background:darkcyan;
+			display:inline-block;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main">
+		<div>
+			<div></div>
+			<div></div>
+		</div>
+		<div>
+		</div>
+		<div>
+		</div>
+	</div>
+</body>
+</html>

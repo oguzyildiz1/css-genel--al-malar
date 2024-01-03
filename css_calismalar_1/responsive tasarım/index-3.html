@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="tr-TR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tasarım</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            background-color: olive;
+            flex-direction: row;
+            align-content: center;
+            align-items: center;
+        }
+
+        nav>div:nth-child(1) {
+            width: 20%;
+        }
+
+        nav>div:nth-child(1) h2 {
+            margin: 0;
+            margin-left: 1rem;
+            color: white;
+        }
+
+        nav>div:nth-child(2) {
+            width: 80%;
+
+        }
+
+        nav>div:nth-child(2)>span {
+            display: none;
+        }
+
+        nav>div:nth-child(2)>ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            text-align: right;
+            justify-content: flex-end;
+            /* flex-direction: row-reverse; */
+        }
+
+        nav>div:nth-child(2)>ul>li>a {
+            color: white;
+            padding: 0.5rem;
+            text-decoration: none;
+            display: block;
+            border-right: 1px solid white;
+        }
+
+        nav>div:nth-child(2)>ul>li>a:hover {
+            background-color: rgb(243, 243, 14)
+        }
+
+
+        @media (max-width:576px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav>div:nth-child(1) {
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid silver;
+            }
+
+            nav>div:nth-child(2) {
+                width: 100%;
+                padding: 0.5rem;
+            }
+
+
+            nav>div:nth-child(2)>span {
+                display: block;
+            }
+
+
+            nav>div:nth-child(2)>span {
+                color: white;
+                padding: 0.3rem 0.5rem;
+                border: 1px solid white;
+                display: inline-block;
+                border-radius: 5px;
+                font-weight: bold;
+                /* margin değeri veriyorum: */
+                margin-left: 10px;
+            }
+
+            nav>div:nth-child(2)>span+ul {
+                /* justify-content: flex-start; */
+                text-align: left;
+                margin-top: 10px;
+            }
+
+            nav>div:nth-child(2)>ul li>a {
+                border-bottom: 1px solid silver;
+                display: block;
+            }
+
+            /* nav>div:nth-child(2)>div>ul>li>a {
+                border-right: none;
+                border-bottom: 1px solid silver;
+                background-color: red;
+            } */
+
+
+            nav>div:nth-child(2)>ul {
+                display: none;
+
+            }
+
+            nav>div:nth-child(2):hover>ul {
+                display: block;
+
+            }
+
+            nav>div:nth-child(2)>ul {
+                flex-direction: column;
+            }
+
+            /* nav>div:nth-child(2)>div:hover+ul {
+				display: block;
+			} */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <h2>Site İsmi</h2>
+        </div>
+
+        <div>
+            <span>&#9776</span>
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>

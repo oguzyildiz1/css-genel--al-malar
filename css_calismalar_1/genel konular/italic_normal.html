@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+		
+		<style>
+			#_blank{
+				display:inline;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="first">asdfasdfasdf</p> 
+		<div id="myDiv">
+			<h2 class="heya">A heading with class="example" in div</h2>
+			
+			<h2 class="example">A paragraph with class="example" in div.</h2>
+		</div>
+		
+		<p>Click the button to change the text of the first element with class="example" in div.</p>
+		<button onclick="myFunction()">Try it</button>
+		
+		<!-- style buttonu style ayarlıyor -->
+		<button id="styleButton" onclick="makeItalic()">Italic</button>
+		
+		<button onclick="makeNormal()">Normal</button>
+		<p id="_blank"></p>
+		
+		<script>
+			var y = document.getElementsByTagName("p"); 
+			console.log(y[0]);
+			console.log(y.length);
+			
+			
+			var sayac=0; // 0. index ile başlıyor
+			var _styleChange = 0;
+			var _buttonName="";
+			function myFunction(){
+				if (sayac>1){
+					document.getElementById("_blank").innerHTML="Başka Paragraf kalmadı.";
+				}else{
+					y[sayac].innerHTML="HELLO WORLD!";
+					var x= document.getElementById("myDiv");
+					console.log(x);
+					sayac+=1;
+				}
+			}
+			
+			//ilk h2 italic olacak
+			function makeItalic(){
+				if(_styleChange == 1){
+					makeNormal();
+					buttonName();
+				}else{
+					var k =	document.getElementsByClassName("first");
+					k[0].style.fontStyle="italic";
+					_styleChange = 1;
+					// karakterler italic oldu ve button name "normal" yazsın diye buttonName() fonksiyonu çaprıldı.
+					buttonName();
+				} 
+			}
+			
+			function makeNormal(){
+				var k= document.getElementsByClassName("first");
+				k[0].style.fontStyle="normal";
+				_styleChange=0;
+			}
+			
+			function buttonName(){
+				if(_buttonName=="italic"){
+					var z = document.getElementById("styleButton");
+					z.innerHTML="Italic";
+					_buttonName = "normal";
+					// console.log("if içinde")
+				}else{
+					// id'si "styleButton" olan elementin text'i değişiyor.
+					var z =	document.getElementById("styleButton");
+					z.innerHTML="Normal";
+					_buttonName="italic"
+					// console.log("else içinde")
+				}
+			}
+		</script>
+	</body>
+</html>

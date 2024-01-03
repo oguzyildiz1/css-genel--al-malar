@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ul Yatay kullanımı</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        ul.main{
+            margin:0;
+            padding:0;
+            list-style:none;
+            background-color:darkred;
+            display:flex;
+            position:relative;
+        }
+        
+        ul.main > li > a{
+            color:white;
+            text-decoration:none;
+            padding:0.5rem;
+            display:block;
+        }
+        ul.main > li > a.mega::after{
+            content:"\21E9";
+            margin-left:0.5rem;
+        }
+        ul.main > li > a:hover{
+            background-color:rgb(227, 11, 11);
+        }
+        ul.main > li{
+            border-right:1px solid white;
+        }
+        ul.main > li > div{
+            width:100%;
+            background-color:#333;
+            min-height:200px;
+            position:absolute;
+            top:100%;
+            right:0;
+            display:none;
+        }
+        ul.main > li:hover > div{
+            display:flex;
+            border-bottom:5px solid darkred;
+        }
+        ul.main > li > div > div{
+            flex:1;
+            border-right:1px solid silver;
+        }
+        ul.main > li > div > div > ul{
+            margin:0;
+            padding:0;
+            list-style:none;
+        }
+        ul.main > li > div > div > ul > li{
+             
+        }
+        ul.main > li > div > div > ul > li > a{
+            color:white;
+            text-decoration:none;
+            padding:0.5rem;
+            display:block;
+            border-bottom:1px solid silver;
+        }
+        ul.main > li > div > div > ul > li > a:hover{
+            background-color:silver;
+            color:black;
+        }
+        ul.main > li > div > div > ul > li:last-child > a{
+            /* background-color:aqua; */
+            border-bottom:none;
+        }
+        ul.main > li > div > div > ul > li > ul{
+            margin:0;
+            padding:0;
+            list-style:none;
+            display:none;
+        }
+        ul.main > li > div > div > ul > li:hover > ul{
+            display:block;
+        }
+        ul.main > li > div > div > ul > li > ul > li > a{
+            background-color:darkred;
+            color:white;
+            padding:0.5rem;
+            display:block;
+            text-decoration:none;
+            border-bottom:1px solid silver;
+        }
+        ul.main > li > div > div > ul > li > ul > li > a:hover{
+            background-color:red;
+        }
+ 
+    </style>
+
+</head>
+<body>
+    <ul class="main">
+        <li><a class="mega" href="#">Link</a>
+            <div>
+                 <div>
+                    <ul>
+                        <li><a href="#">Alt Menu</a>
+                            <ul>
+                                <li><a href="#">Mega Alt</a></li>                             
+                                <li><a href="#">Mega Alt</a></li>                             
+                                <li><a href="#">Mega Alt</a></li>                             
+                                <li><a href="#">Mega Alt</a></li>                             
+                                <li><a href="#">Mega Alt</a></li>                             
+                                <li><a href="#">Mega Alt</a></li>                             
+                                <li><a href="#">Mega Alt</a></li>                             
+                            </ul>
+                        </li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                    </ul>
+                 </div>
+                 <div>
+                    <ul>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                    </ul>
+                 </div>
+                 <div>
+                    <ul>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                    </ul>
+                 </div>
+                 <div>
+                    <ul>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                        <li><a href="#">Alt Menu</a></li>
+                    </ul>
+                 </div>
+            </div>
+        </li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+    </ul>
+</body>
+</html>

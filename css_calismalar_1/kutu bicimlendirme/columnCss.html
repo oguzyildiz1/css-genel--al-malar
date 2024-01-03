@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Column CSS</title>
+        <style>
+            div{
+                width:80%;
+                height:auto;
+                margin:50px auto;
+                column-count:3;
+                column-gap:50px;
+                column-rule:2px solid darkred;
+                text-align:justify;
+                border:2px solid darkred;
+                padding:50px;
+            }
+            div p::first-letter{
+                font-size:45px;
+            }
+            div p::first-line{
+                text-decoration:underline;
+            }
+            div h1{
+                column-span:all;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div>
+            <h1>Birinci Paragrafın Başlığı</h1>
+            <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl purus, suscipit id eleifend nec, pellentesque a ligula. Praesent tincidunt, neque et venenatis pulvinar, magna arcu semper nunc, ac pretium risus dui in magna. Suspendisse maximus lorem quis orci hendrerit pharetra. Integer fermentum posuere orci, non feugiat enim faucibus vel. Pellentesque non dignissim leo. Nulla quis erat ac purus euismod accumsan id eget nisi. Nulla felis lorem, convallis et ullamcorper eget, semper vestibulum nunc. Etiam et luctus est. Duis quis aliquam eros. Quisque imperdiet eleifend elit sit amet suscipit. Duis pulvinar est mi, eu pretium massa euismod vel.
+
+Quisque dictum eget metus ut maximus. Quisque tristique ultricies nunc, non porttitor lorem tempus at. Proin ex arcu, gravida ut gravida sit amet, imperdiet id est. Sed condimentum tortor dui, vel fringilla neque congue aliquet. Quisque mattis non leo vitae maximus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In ut lacus tempus, euismod mauris id, faucibus elit. Quisque finibus augue non dolor pretium ultricies nec vitae urna. Nam lacinia, velit nec iaculis maximus, ex leo ultricies nisl, sit amet mollis mi neque a enim. Proin dignissim tellus efficitur, ullamcorper mi id, tristique purus. Curabitur vulputate, lorem ac cursus fermentum, velit lectus consectetur eros, et ultrices justo nisl vitae libero. Cras bibendum mi eu magna tempus blandit nec a justo. Donec at suscipit velit, sit amet maximus urna. Vivamus fringilla aliquet dictum.
+
+Maecenas semper mi a tincidunt rhoncus. Aenean maximus dui pharetra mauris pellentesque maximus. Etiam nec mauris vitae dolor tristique maximus vitae in magna. Donec quis metus vel felis finibus aliquam quis sit amet felis. Nullam tortor orci, luctus sed sem at, ultricies molestie quam. Ut maximus metus ut est dictum molestie. Vestibulum tincidunt nibh orci, rutrum porttitor tellus pellentesque a. Maecenas ullamcorper faucibus lectus, nec vestibulum mauris tristique nec. Cras eget iaculis felis. Etiam ullamcorper venenatis felis nec suscipit. Sed non faucibus libero.
+    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl purus, suscipit id eleifend nec, pellentesque a ligula. Praesent tincidunt, neque et venenatis pulvinar, magna arcu semper nunc, ac pretium risus dui in magna. Suspendisse maximus lorem quis orci hendrerit pharetra. Integer fermentum posuere orci, non feugiat enim faucibus vel. Pellentesque non dignissim leo. Nulla quis erat ac purus euismod accumsan id eget nisi. Nulla felis lorem, convallis et ullamcorper eget, semper vestibulum nunc. Etiam et luctus est. Duis quis aliquam eros. Quisque imperdiet eleifend elit sit amet suscipit. Duis pulvinar est mi, eu pretium massa euismod vel.
+
+Quisque dictum eget metus ut maximus. Quisque tristique ultricies nunc, non porttitor lorem tempus at. Proin ex arcu, gravida ut gravida sit amet, imperdiet id est. Sed condimentum tortor dui, vel fringilla neque congue aliquet. Quisque mattis non leo vitae maximus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In ut lacus tempus, euismod mauris id, faucibus elit. Quisque finibus augue non dolor pretium ultricies nec vitae urna. Nam lacinia, velit nec iaculis maximus, ex leo ultricies nisl, sit amet mollis mi neque a enim. Proin dignissim tellus efficitur, ullamcorper mi id, tristique purus. Curabitur vulputate, lorem ac cursus fermentum, velit lectus consectetur eros, et ultrices justo nisl vitae libero. Cras bibendum mi eu magna tempus blandit nec a justo. Donec at suscipit velit, sit amet maximus urna. Vivamus fringilla aliquet dictum.
+
+Maecenas semper mi a tincidunt rhoncus. Aenean maximus dui pharetra mauris pellentesque maximus. Etiam nec mauris vitae dolor tristique maximus vitae in magna. Donec quis metus vel felis finibus aliquam quis sit amet felis. Nullam tortor orci, luctus sed sem at, ultricies molestie quam. Ut maximus metus ut est dictum molestie. Vestibulum tincidunt nibh orci, rutrum porttitor tellus pellentesque a. Maecenas ullamcorper faucibus lectus, nec vestibulum mauris tristique nec. Cras eget iaculis felis. Etiam ullamcorper venenatis felis nec suscipit. Sed non faucibus libero.
+            <h1>İkinci Paragrafın Başlığı</h1>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl purus, suscipit id eleifend nec, pellentesque a ligula. Praesent tincidunt, neque et venenatis pulvinar, magna arcu semper nunc, ac pretium risus dui in magna. Suspendisse maximus lorem quis orci hendrerit pharetra. Integer fermentum posuere orci, non feugiat enim faucibus vel. Pellentesque non dignissim leo. Nulla quis erat ac purus euismod accumsan id eget nisi. Nulla felis lorem, convallis et ullamcorper eget, semper vestibulum nunc. Etiam et luctus est. Duis quis aliquam eros. Quisque imperdiet eleifend elit sit amet suscipit. Duis pulvinar est mi, eu pretium massa euismod vel.
+
+Quisque dictum eget metus ut maximus. Quisque tristique ultricies nunc, non porttitor lorem tempus at. Proin ex arcu, gravida ut gravida sit amet, imperdiet id est. Sed condimentum tortor dui, vel fringilla neque congue aliquet. Quisque mattis non leo vitae maximus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In ut lacus tempus, euismod mauris id, faucibus elit. Quisque finibus augue non dolor pretium ultricies nec vitae urna. Nam lacinia, velit nec iaculis maximus, ex leo ultricies nisl, sit amet mollis mi neque a enim. Proin dignissim tellus efficitur, ullamcorper mi id, tristique purus. Curabitur vulputate, lorem ac cursus fermentum, velit lectus consectetur eros, et ultrices justo nisl vitae libero. Cras bibendum mi eu magna tempus blandit nec a justo. Donec at suscipit velit, sit amet maximus urna. Vivamus fringilla aliquet dictum.
+
+Maecenas semper mi a tincidunt rhoncus. Aenean maximus dui pharetra mauris pellentesque maximus. Etiam nec mauris vitae dolor tristique maximus vitae in magna. Donec quis metus vel felis finibus aliquam quis sit amet felis. Nullam tortor orci, luctus sed sem at, ultricies molestie quam. Ut maximus metus ut est dictum molestie. Vestibulum tincidunt nibh orci, rutrum porttitor tellus pellentesque a. Maecenas ullamcorper faucibus lectus, nec vestibulum mauris tristique nec. Cras eget iaculis felis. Etiam ullamcorper venenatis felis nec suscipit. Sed non faucibus libero.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl purus, suscipit id eleifend nec, pellentesque a ligula. Praesent tincidunt, neque et venenatis pulvinar, magna arcu semper nunc, ac pretium risus dui in magna. Suspendisse maximus lorem quis orci hendrerit pharetra. Integer fermentum posuere orci, non feugiat enim faucibus vel. Pellentesque non dignissim leo. Nulla quis erat ac purus euismod accumsan id eget nisi. Nulla felis lorem, convallis et ullamcorper eget, semper vestibulum nunc. Etiam et luctus est. Duis quis aliquam eros. Quisque imperdiet eleifend elit sit amet suscipit. Duis pulvinar est mi, eu pretium massa euismod vel.
+
+Quisque dictum eget metus ut maximus. Quisque tristique ultricies nunc, non porttitor lorem tempus at. Proin ex arcu, gravida ut gravida sit amet, imperdiet id est. Sed condimentum tortor dui, vel fringilla neque congue aliquet. Quisque mattis non leo vitae maximus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In ut lacus tempus, euismod mauris id, faucibus elit. Quisque finibus augue non dolor pretium ultricies nec vitae urna. Nam lacinia, velit nec iaculis maximus, ex leo ultricies nisl, sit amet mollis mi neque a enim. Proin dignissim tellus efficitur, ullamcorper mi id, tristique purus. Curabitur vulputate, lorem ac cursus fermentum, velit lectus consectetur eros, et ultrices justo nisl vitae libero. Cras bibendum mi eu magna tempus blandit nec a justo. Donec at suscipit velit, sit amet maximus urna. Vivamus fringilla aliquet dictum.
+
+Maecenas semper mi a tincidunt rhoncus. Aenean maximus dui pharetra mauris pellentesque maximus. Etiam nec mauris vitae dolor tristique maximus vitae in magna. Donec quis metus vel felis finibus aliquam quis sit amet felis. Nullam tortor orci, luctus sed sem at, ultricies molestie quam. Ut maximus metus ut est dictum molestie. Vestibulum tincidunt nibh orci, rutrum porttitor tellus pellentesque a. Maecenas ullamcorper faucibus lectus, nec vestibulum mauris tristique nec. Cras eget iaculis felis. Etiam ullamcorper venenatis felis nec suscipit. Sed non faucibus libero.
+            </p>
+    
+
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,5 @@
+
+index-2:
+	transition: all cubic-bezier(0.45, -0.21, 0.26, -0.76) 1s
+
+geri gelip ileri giden geçiş efekti--- Kullanabilirsin!!!!

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Özellikleri</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        div.x{
+            width:300px;
+            height:300px;
+            margin:100px auto;
+            padding:1rem; 
+            box-sizing:border-box;
+            background-color:silver;
+            /* border-style:ridge;
+            border-color:red;
+            border-width:3px; */
+            /* border:10px dotted blue; */
+            /* border-right:dotted 10px blue;
+            border-left:solid 2px red;
+            border-top:ridge 5px purple;
+            border-bottom:double 6px yellow;  */
+            border:3px solid purple;
+            border-top-left-radius:50%;
+            border-bottom-right-radius:50%;
+            border-top-right-radius:25%;
+            border-bottom-left-radius:25%;
+            overflow:hidden;
+            display:flex;
+            flex-flow:wrap row; /* Bu özellik text'i hizalamaya yarıyor */
+            text-align:justify;
+            justify-content: center;
+            align-content:center;
+        }
+        div.kutu{
+            width:300px;
+            height:100px;
+            border:2px solid purple;
+            margin:100px auto;
+            border-radius:5px;
+            position:relative;
+        }
+        div.kutu::before{
+            content:"";
+            border-top:20px solid purple;
+            border-left:20px solid transparent;
+            border-right:20px solid transparent;
+            position:absolute;
+            left:200px;
+            top:100%;
+        }
+        div.kutu-2{
+            width:300px;
+            height:100px;
+            border:2px solid orange;
+            margin:100px auto;
+            outline-style:dotted;
+            outline-width:2px;
+            outline-offset:20px;
+            outline-color:rgb(216, 186, 17);
+            transition:all ease 1s;
+        }
+        div.kutu-2:hover{
+            box-shadow:0px 0px 5px #333;
+        }
+
+    </style>
+</head> 
+<body>
+    <div class="kutu-2">
+        içerik
+    </div>
+    <div class="kutu">
+
+    </div>
+    <div class="x">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores earum aliquid exercitationem voluptate libero pariatur ullam eligendi modi excepturi accusamus deserunt accusantium voluptatibus facilis repellat quam ut corrupti.
+        </p> 
+    </div>
+</body>
+</html>

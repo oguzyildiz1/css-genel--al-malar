@@ -1,0 +1,6 @@
+- index 2'ye kadar responsive tasarım yapıldı. Fakat hover edildiğinde aşağıdaki menuye geçilmiyor.
+video: 2022-12-04; saat: 02:35:00
+
+-index 3 te ise bu yapılacak
+	- Bunun için ul'yi spanla aynı divin içerisine ekledim.
+	

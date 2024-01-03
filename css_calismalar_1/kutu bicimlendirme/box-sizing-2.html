@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta charset="utf-8">
+<title>Boxes</title>
+	<style>
+		:root{
+			--kutuHeight: 50vh;
+		}
+		body{
+			width:100vw;
+			padding:0;
+			margin:0;
+		}
+		div{
+			width:calc(100vw - 80%); /* işlemler arasında boşluk bırak!!!
+			/* width:calc((100%*1/100)*10);
+			/* width:calc(10vw*0.98);
+			/* width:calc(100% - 600px); /* calc fonksiyonu*/
+			height: var(--kutuHeight);
+			background-color:tomato;
+			padding:calc(calc(100vw - 90%) * 0.1); /* ilki yukarından aşağı padding değeri verir, ikincisi ise soldan sağa*/ 
+			/*padding: 50px 100px 40px 60px; /* Bu da yukarıdan başlayarak saat yönünde padding değeri atar*/;
+			margin: calc(calc( 100vh - var(--kutuHeight)) / 2) auto; /* kutuyu dikeyde ortaldım. 
+			box-sizing:border-box; /*padding değerini içeriden verir kutu şişmez */
+			border:1px solid black;
+			/* overflow:scroll; /* taşan kısımlar için scroll ekliyor. */
+			/*overflow:auto;*/
+			overflow-x:hidden;
+			overflow-y:scroll;
+		}
+	</style>	
+</head>
+
+<body>
+	<div>fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum ligula et placerat tincidunt. Fusce ultricies felis ligula, ut eleifend lorem tincidunt eget. Quisque interdum mi dui, et tincidunt nibh egestas sed. Morbi pulvinar nibh non purus tempor, dapibus finibus eros egestas. Nam vitae convallis odio. Ut congue tempor mauris.
+	</div>
+</body>
+</html>

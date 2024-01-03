@@ -1,0 +1,2 @@
+1. ctrl-f5 ile tarayıcı önbelleğini temilemek.
+2. gizli sekmede açılır.
